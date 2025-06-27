@@ -77,6 +77,68 @@ To develop an end-to-end classification pipeline that:
 - Learned best practices for aligning train/test sets after one-hot encoding
 
 ---
+---
+
+### 📊 Power BI Dashboard – Interactive Loan Default Risk Analysis
+
+To complement the machine learning model, an **interactive Power BI dashboard** was developed to uncover business-level insights and interpret model predictions visually.
+
+#### ✅ Dashboard Highlights
+
+Risk Segmentation
+Visualized applicant risk levels by bucketing prediction probabilities into four categories:
+
+Low Risk (0.00–0.20)
+
+Medium Risk (0.21–0.50)
+
+High Risk (0.51–0.90)
+
+Default Likely (>0.90)
+
+
+Demographic & Employment Trends
+Custom fields like AGE and EMPLOYMENT_YEARS were derived from raw date fields to analyze patterns across age groups and job duration.
+
+
+
+* **Risk Category Slicer & Customer Lookup**
+  Enables filtering all visuals based on predicted `Risk Category` and specific `Customer ID`, making exploration tailored and intuitive.
+
+* **Donut Chart – Client Companion Analysis**
+  Displays who accompanied the client during the loan application (e.g., spouse, friend), offering insights into behavioral factors affecting risk.
+
+* **Stacked Bar Charts**
+
+  * **Number of Children vs Income Type:** Understand how family structure and income source relate to default probability.
+  * **Contract Type vs Risk Level:** Examine how different loan types (e.g., Cash loans, Revolving loans) correlate with applicant risk.
+
+* **Pie Charts**
+
+  * **Realty Ownership vs Risk:** Visualizes how owning real estate impacts default risk.
+  * **Car Ownership vs Risk:** Compares default tendencies of applicants owning vs not owning a car.
+
+* **Treemap – Occupation vs Loan Amount**
+  Shows which occupational groups kept the highest amounts to secure their loans.
+
+* **Bar Chart – Organization Type vs Income**
+  Maps different organization types to the total income reported by applicants.
+
+* **Funnel Chart – Total Income by Age Group**
+  Illustrates income distribution across age buckets to identify income trends in high-risk demographics.
+
+* **Clustered Column Chart – Age, Employment Years, and Risk**
+  Analyzes how applicant age and employment duration influence loan default probability.
+
+#### 🎯 Business Value
+
+The dashboard empowers business stakeholders to:
+
+* Identify key applicant traits driving loan defaults.
+* Compare risk across demographic, behavioral, and financial segments.
+* Gain trust in the ML model by visualizing its predictions in a business-friendly format.
+
+---
 
 ## 🚀 Future Work
 
